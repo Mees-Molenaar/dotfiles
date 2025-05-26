@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Get week number
+alias week='date +%V'
+
+alias ll="ls -lh"
+
+# Save a lot of typing for common commands
+alias gs="git status"
+alias gc="git commit"
