@@ -1,0 +1,10 @@
+# Only CLAUDE.md and skills/ are tracked here. Guard against accidental
+# additions of Claude Code runtime state or secrets.
+.credentials.json
+*.jsonl
+settings.local.json
+sessions/
+projects/
+telemetry/
+file-history/
+shell-snapshots/
