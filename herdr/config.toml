@@ -1,0 +1,41 @@
+# Match Neovim's window-management muscle memory.
+#
+# Keep Herdr's default Ctrl-B prefix. Vertical splits open on the right and
+# horizontal splits open below, matching the options in ../nvim/init.lua.
+[keys]
+
+# Create a new terminal tab with Ctrl-B, then t.
+new_tab = "prefix+t"
+
+# After the Ctrl-B prefix: v splits right and s splits below.
+split_vertical = "prefix+v"
+split_horizontal = "prefix+s"
+
+# After the Ctrl-B prefix: c closes the focused pane.
+close_pane = "prefix+c"
+
+# vim-herdr-navigation forwards these chords into Vim/Neovim when focused;
+# otherwise it focuses the adjacent Herdr pane.
+[[keys.command]]
+key = "ctrl+h"
+type = "plugin_action"
+command = "vim-herdr-navigation.left"
+description = "Navigate left (Vim/Herdr)"
+
+[[keys.command]]
+key = "ctrl+j"
+type = "plugin_action"
+command = "vim-herdr-navigation.down"
+description = "Navigate down (Vim/Herdr)"
+
+[[keys.command]]
+key = "ctrl+k"
+type = "plugin_action"
+command = "vim-herdr-navigation.up"
+description = "Navigate up (Vim/Herdr)"
+
+[[keys.command]]
+key = "ctrl+l"
+type = "plugin_action"
+command = "vim-herdr-navigation.right"
+description = "Navigate right (Vim/Herdr)"
